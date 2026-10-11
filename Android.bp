@@ -1,0 +1,618 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+    ],
+}
+
+cc_prebuilt_library_shared {
+    name: "com.google.edgetpu_app_service-V10-ndk",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/com.google.edgetpu_app_service-V10-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.google.edgetpu_vendor_service-V2-ndk",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkproperty",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmtkproperty.so",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmtkrillog",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libmtkrillog.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpixeldisplaymanager_jni",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libpixeldisplaymanager_jni.so",
+            ],
+            shared_libs: [
+                "libandroid",
+                "libbinder",
+                "libbinder_ndk",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libpixelimsmedia",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libpixelimsmedia.so",
+            ],
+            shared_libs: [
+                "libjnigraphics",
+                "libmediandk",
+                "libcamera2ndk",
+                "libnativewindow",
+                "vendor.google.whitechapel.audio.extension-V8-ndk",
+                "libbinder_ndk",
+                "libhidlbase",
+                "libmediautils",
+                "vendor.google.whitechapel.audio.audioext@4.0",
+                "framework-permission-aidl-cpp",
+                "libandroid",
+                "libandroid_runtime",
+                "libbinder",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.google.whitechapel.audio.audioext@4.0",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.google.whitechapel.audio.audioext@4.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.google.whitechapel.audio.extension-V8-ndk",
+    owner: "google",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.google.whitechapel.audio.extension-V8-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "CarrierSettings",
+    owner: "google",
+    apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "PersistentBackgroundCameraServices",
+    owner: "google",
+    apk: "proprietary/system_ext/app/PersistentBackgroundCameraServices/PersistentBackgroundCameraServices.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "CarrierSetup",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/CarrierSetup/CarrierSetup.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "EuiccGoogleOverlay",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "EuiccSupportPixel-P23",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/EuiccSupportPixel-P23/EuiccSupportPixel-P23.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "EuiccSupportPixelPermissions",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "PixelDisplayService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/PixelDisplayService/PixelDisplayService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "PixelImsMediaService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/PixelImsMediaService/PixelImsMediaService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "PixelModemService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/PixelModemService/PixelModemService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "PixelQualifiedNetworksService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "PixelSatelliteService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/PixelSatelliteService/PixelSatelliteService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "VendorImplSatelliteService",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/VendorImplSatelliteService/VendorImplSatelliteService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "grilservice",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/grilservice/grilservice.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+android_app_import {
+    name: "ril-extension",
+    owner: "google",
+    apk: "proprietary/system_ext/priv-app/ril-extension/ril-extension.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "RadioConfigLib",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/RadioConfigLib.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.google.android.camera.extensions",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/com.google.android.camera.extensions.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.google.android.camerax.extensions",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/com.google.android.camerax.extensions.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.google.android.modem.pms.lib",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/com.google.android.modem.pms.lib.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.google.pixel.camera.connectivity",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/com.google.pixel.camera.connectivity.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.google.pixel.camera.services.cameraidremapper",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/com.google.pixel.camera.services.cameraidremapper.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "com.google.pixel.camera.services.lyricconfigprovider",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/com.google.pixel.camera.services.lyricconfigprovider.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "google-ril",
+    owner: "google",
+    jars: [
+        "proprietary/system_ext/framework/google-ril.jar",
+    ],
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "com.google.pixel.camera.services@1.0-service-google.xml",
+    owner: "google",
+    src: "proprietary/system_ext/etc/vintf/manifest/com.google.pixel.camera.services@1.0-service-google.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.google.edgetpu_app_service@1.0-service.xml",
+    owner: "google",
+    src: "proprietary/system_ext/etc/vintf/manifest/vendor.google.edgetpu_app_service@1.0-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "radio_framework_compatibility_matrix_system_ext",
+    owner: "google",
+    src: "proprietary/system_ext/etc/vintf/radio_framework_compatibility_matrix_system_ext",
+    filename_from_src: true,
+    sub_dir: "vintf",
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "gs_watchdogd",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/gs_watchdogd",
+            ],
+            shared_libs: [
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.google.edgetpu_app_service@1.0-service",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+            ],
+            shared_libs: [
+                "com.google.edgetpu_app_service-V10-ndk",
+                "com.google.edgetpu_vendor_service-V2-ndk",
+                "libandroid",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libcrypto",
+                "libutils",
+                "packagemanager_aidl-cpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.google.whitechapel.audio.hal.parserservice",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/hw/vendor.google.whitechapel.audio.hal.parserservice",
+            ],
+            shared_libs: [
+                "android.media.audio.common.types-V5-ndk",
+                "android.hardware.audio.core-V4-ndk",
+                "av-audio-types-aidl-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "sconed",
+    owner: "google",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/bin/sconed",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "liblog",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    system_ext_specific: true,
+}
