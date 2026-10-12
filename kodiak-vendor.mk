@@ -680,6 +680,7 @@ PRODUCT_PACKAGES += \
     EuiccGoogleOverlay \
     EuiccSupportPixel-P23 \
     EuiccSupportPixelPermissions \
+    GbaService \
     PixelDisplayService \
     PixelImsMediaService \
     PixelModemService \
