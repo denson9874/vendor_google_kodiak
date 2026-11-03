@@ -632,11 +632,34 @@ PRODUCT_COPY_FILES += \
     vendor/google/kodiak/proprietary/product/etc/CarrierSettings/ztar_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/ztar_us.pb
 
 PRODUCT_COPY_FILES += \
+    vendor/google/kodiak/proprietary/product/etc/ambient/matcher_tah.leveldb:$(TARGET_COPY_OUT_PRODUCT)/etc/ambient/matcher_tah.leveldb \
+    vendor/google/kodiak/proprietary/product/etc/default-permissions/default-permissions_com.google.android.apps.carrier.carrierwifi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_com.google.android.apps.carrier.carrierwifi.xml \
+    vendor/google/kodiak/proprietary/product/etc/felica/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
+    vendor/google/kodiak/proprietary/product/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfm.cfg \
+    vendor/google/kodiak/proprietary/product/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/mfs.cfg \
+    vendor/google/kodiak/proprietary/product/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.descriptor \
+    vendor/google/kodiak/proprietary/product/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.sound_model \
+    vendor/google/kodiak/proprietary/product/etc/firmware/music_detector.sound_model_tflite:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.sound_model_tflite \
+    vendor/google/kodiak/proprietary/product/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
+    vendor/google/kodiak/proprietary/product/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.biometrics.face.xml \
+    vendor/google/kodiak/proprietary/product/etc/permissions/android.hardware.telephony.euicc.mep.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.mep.xml \
+    vendor/google/kodiak/proprietary/product/etc/permissions/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml \
+    vendor/google/kodiak/proprietary/product/etc/permissions/android.hardware.telephony.satellite.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.satellite.xml \
     vendor/google/kodiak/proprietary/product/etc/permissions/androidx.camera.extensions.impl.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/androidx.camera.extensions.impl.xml \
     vendor/google/kodiak/proprietary/product/etc/permissions/com.google.pixel.camera.connectivity.impl.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.pixel.camera.connectivity.impl.xml \
     vendor/google/kodiak/proprietary/product/etc/permissions/com.google.pixel.camera.services.cameraidremapper.impl.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.pixel.camera.services.cameraidremapper.impl.xml \
     vendor/google/kodiak/proprietary/product/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.impl.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.impl.xml \
+    vendor/google/kodiak/proprietary/product/etc/permissions/privapp-permissions_com.google.android.apps.carrier.carrierwifi.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions_com.google.android.apps.carrier.carrierwifi.xml \
+    vendor/google/kodiak/proprietary/product/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/GoogleCamera_6gb_or_more_ram.xml \
+    vendor/google/kodiak/proprietary/product/etc/sysconfig/adaptivecharging.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/adaptivecharging.xml \
+    vendor/google/kodiak/proprietary/product/etc/sysconfig/preinstalled-packages-camera-services-base.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-camera-services-base.xml \
+    vendor/google/kodiak/proprietary/product/etc/sysconfig/preinstalled-packages-camera-services-common.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-camera-services-common.xml \
     vendor/google/kodiak/proprietary/product/etc/sysconfig/preinstalled-packages-pixel-carrier.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-pixel-carrier.xml \
+    vendor/google/kodiak/proprietary/product/overlay/PearlOverlay2024.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/PearlOverlay2024.apk \
+    vendor/google/kodiak/proprietary/product/overlay/PixelBatteryHealthOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/PixelBatteryHealthOverlay.apk \
+    vendor/google/kodiak/proprietary/product/overlay/PixelBatteryLotXOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/PixelBatteryLotXOverlay.apk \
+    vendor/google/kodiak/proprietary/product/overlay/PixelDisplayService__kodiak__auto_generated_rro_product.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/PixelDisplayService__kodiak__auto_generated_rro_product.apk \
+    vendor/google/kodiak/proprietary/product/overlay/TrafficLightFaceOverlay.apk:$(TARGET_COPY_OUT_PRODUCT)/overlay/TrafficLightFaceOverlay.apk \
     vendor/google/kodiak/proprietary/system_ext/etc/default-permissions/default-permissions-euiccpixel.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions-euiccpixel.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/default-permissions/default-permissions_com.google.android.modem.pms_full.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/default-permissions_com.google.android.modem.pms_full.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/init/init.gs_watchdogd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.gs_watchdogd.rc \
@@ -644,6 +667,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/kodiak/proprietary/system_ext/etc/init/sconed.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/sconed.rc \
     vendor/google/kodiak/proprietary/system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc \
     vendor/google/kodiak/proprietary/system_ext/etc/init/vendor.google.whitechapel.audio.hal.parserservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.google.whitechapel.audio.hal.parserservice.rc \
+    vendor/google/kodiak/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/permissions/com.android.omadm.radioconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.omadm.radioconfig.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/permissions/com.android.qns.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.qns.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/permissions/com.google.android.camera.extensions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.google.android.camera.extensions.xml \
@@ -659,9 +683,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/kodiak/proprietary/system_ext/etc/permissions/google-ril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/google-ril.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/permissions/privapp-permlist_com.google.android.grilservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permlist_com.google.android.grilservice.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/sysconfig/preinstalled-packages-gril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-gril.xml \
+    vendor/google/kodiak/proprietary/system_ext/etc/sysconfig/preinstalled-packages-hotword-google-fusion-pro.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-hotword-google-fusion-pro.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/sysconfig/preinstalled-packages-pixel-modem-service.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-pixel-modem-service.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/sysconfig/preinstalled-packages-pixelimsmedia.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-pixelimsmedia.xml \
     vendor/google/kodiak/proprietary/system_ext/etc/sysconfig/preinstalled-packages-ril.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/preinstalled-packages-ril.xml \
+    vendor/google/kodiak/proprietary/system_ext/etc/wifi/p2p_supplicant_mainline_overlay.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wifi/p2p_supplicant_mainline_overlay.conf \
+    vendor/google/kodiak/proprietary/system_ext/etc/wifi/wpa_supplicant_mainline_overlay.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wifi/wpa_supplicant_mainline_overlay.conf \
     vendor/google/kodiak/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/DKA_0303_03x_25.up:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/DKA_0303_03x_25.up \
     vendor/google/kodiak/proprietary/system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1.img:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/EuiccSupportPixel-P23/esim-full-v1.img
 
@@ -674,9 +701,23 @@ PRODUCT_PACKAGES += \
     libpixelimsmedia \
     vendor.google.whitechapel.audio.audioext@4.0 \
     vendor.google.whitechapel.audio.extension-V8-ndk \
+    NowPlayingPrebuilt \
+    AICorePrebuilt-aicore_20260302.01_RC00 \
+    AmbientStreaming \
     CarrierSettings \
+    CarrierWifi \
+    CreativeAssistant \
+    EuiccGoogle \
+    HotwordEnrollmentOKGoogleFUSIONPro \
+    HotwordEnrollmentXGoogleFUSIONPro \
+    PixelAIPrebuilt \
+    PixelCameraServices \
+    PixelSensePrebuilt \
+    SatelliteGateway-Phone-v96792000 \
+    WfcActivation \
     PersistentBackgroundCameraServices \
     CarrierSetup \
+    SettingsGoogleFutureFaceEnroll \
     EuiccGoogleOverlay \
     EuiccSupportPixel-P23 \
     EuiccSupportPixelPermissions \
@@ -684,12 +725,14 @@ PRODUCT_PACKAGES += \
     PixelDisplayService \
     PixelImsMediaService \
     PixelModemService \
+    PixelNfc \
     PixelQualifiedNetworksService \
     PixelSatelliteService \
     VendorImplSatelliteService \
     grilservice \
     ril-extension \
     RadioConfigLib \
+    com.android.hotwordenrollment.common.util \
     com.google.android.camera.extensions \
     com.google.android.camerax.extensions \
     com.google.android.modem.pms.lib \

@@ -6,3 +6,7 @@ These files are Google's, not ours. They're here so the device tree builds.
 
 Clone to `vendor/google/kodiak`. The stock partition images (`vendor/google/kodiak-images`)
 are generated separately by the device tree's `extract-images.sh` and aren't published.
+
+`PixelCameraServices.apk` is over GitHub's 100 MB file limit, so it's stored with Git LFS.
+Install [git-lfs](https://git-lfs.com) before cloning. If you cloned without it, or synced with
+`repo`, run `git lfs pull` here. Otherwise that APK is only a small text pointer.
